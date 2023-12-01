@@ -65,6 +65,7 @@
         //console.log(e.keyCode)   gives u key code
 
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // for access all audio from a to l
+        // .key is used for access key calss in upper div and this code is (${e.keyCode}) make dynamic 
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); // for access all div when we click any button
 
         if (!audio) return; // if u press other than  A to L words
